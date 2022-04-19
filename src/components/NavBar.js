@@ -5,17 +5,23 @@ import { Link, NavLink } from "react-router-dom"
 const NavBar = () => {
   return (
     <header className="main-header">
-      <h1 className="py-4 mb-0"><Link to="/">Mi Tienda Virtual</Link></h1>
+      <h1 className="py-4 mb-0"><Link to="/">mi<span>TiendaVirtual</span></Link></h1>
       <nav className="main-nav">
         <ul>
-          <li>
-            <NavLink to="/category/verduras">Verduras</NavLink>
+        <li>
+            <NavLink to="/">All</NavLink>
           </li>
           <li>
-            <NavLink to="/category/carnes">Carnes</NavLink>
+            <NavLink to="/category/electronics">Electronics</NavLink>
           </li>
           <li>
-            <NavLink to="/category/bebidas">Bebidas</NavLink>
+            <NavLink to="/category/jewelery">Jewelery</NavLink>
+          </li>
+          <li>
+            <NavLink to="/category/men's clothing">Men's clothing</NavLink>
+          </li>
+          <li>
+            <NavLink to="/category/women's clothing">Women's clothing</NavLink>
           </li>
         </ul>
       </nav>

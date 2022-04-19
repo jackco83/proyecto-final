@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Mi Tienda Virtual
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Mi Tienda Virtual, viene hacer mi proyecto final del curso de React llevado en Coderhouse.
+El proyecto es un e-commerce que muestra los artículos de diferentes categorías como para hombre, mujer y accesorios electrónicos.
 
-## Available Scripts
+La maquetación cuenta con un header, main y footer.
 
-In the project directory, you can run:
+El header contiene un menú (nav) en donde se muestra las categorías, título y su botón del carrito.
 
-### `npm start`
+El main contiene los artículos de todas las categorías que muestran en el menú. Cada articulo tiene su botón de detalle y este te muestra el nombre, precio, descripción y un control de cantidades para seleccionar al carrito de compras. En la sección del carrito, muestra el listado de artículos seleccionados con su cantidad, precio unitario y el precio total.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+El footer contiene su texto de copyright.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Uso e Instalación
+Para instalar ReactJS, que es una de las librerías o frameworks para JavaScript más populares, seguimos estos pasos:
 
-### `npm test`
+* Instalar [NodeJS](https://nodejs.org/es/) en su ultima versión.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Instalar Create React App, que es un interprete de consola(CLI) que nos va a permitir instalar React e incluirá su webpack para la compilación, minificación y una estructura básica del proyecto. Ejecutamos este comando:
+  ```
+  npm install -g create-react-app
+  ```
 
-### `npm run build`
+* Para generar un nuevo proyecto de React ejecutamos este comando:
+  ```
+  create-react-app NombreDelProyecto
+  ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Ahora entraremos a la carpeta del proyecto e iniciamos el servidor local para React:
+  ```
+  cd NombreDelProyecto
+  npm start
+  ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Finalmente veremos nuestro proyecto corriendo (http://localhost:3000/), con la página de bienvenida por defecto.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Visualizar el proyecto
 
-### `npm run eject`
+* Clonar el repositorio de github:
+  ```
+  git clone http://github.com/micuenta/mirepo.git
+  ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Entrar a la carpeta del proyecto:
+  ```
+  cd mirepo
+  ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Instalar los paquetes del package.json:
+  ```
+  npm i
+  ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Iniciar el proyecto:
+  ```
+  npm start
+  ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Tecnologías usadas
 
-## Learn More
+* [React Bootstrap](https://react-bootstrap.github.io/)
+* [Firebase](https://firebase.google.com/)
+* [React Rate Component](https://www.npmjs.com/package/rc-rate)
+* [Bootstrap](https://www.npmjs.com/package/bootstrap)
+* [React Router DOM](https://www.npmjs.com/package/react-router-dom)
+* [React-Toastify](https://www.npmjs.com/package/react-toastify)
+* [Sass](https://www.npmjs.com/package/node-sass)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Comentarios finales
+Este proyecto final es el resultado de todo lo aprendido en Coderhouse y al profesor Horacio Gutierrez quien llevo la clase de una forma sencilla y clara a cualquier duda que se presentaba en el grupo.
+Personalmente, siendo mi primera vez en Coderhouse, me llevo las mejores referencias de su metodología de enseñanza.

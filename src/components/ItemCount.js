@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 const ItemCount = (props) => {
-  let [estado, setEstado] = useState(props.inicial)
+  let [estado, setEstado] = useState(props.initial)
 
   const btnSumar = () => {
     if (estado < props.stock) {
@@ -10,28 +10,28 @@ const ItemCount = (props) => {
   }
 
   const btnRestar = () => {
-    if (estado > props.inicial) {
+    if (estado > props.initial) {
       setEstado(estado - 1)
     }
   }
 
-  const onAdd = () => {
-    alert(estado)
+  const btnAgregar = () => {
+    props.onAdd(estado)
   }
 
   return (
-    <div className="md-control">
+    <div className="md-control my-4">
       <div>
-        <button onClick={btnRestar}>
-          <span className="material-icons">remove_circle_outline</span>
+        <button className="cant" onClick={btnRestar}>
+          <i className="fa-solid fa-minus"></i>
         </button>
         <span>{estado}</span>
-        <button onClick={btnSumar}>
-          <span className="material-icons">add_circle_outline</span>
+        <button className="cant" onClick={btnSumar}>
+          <i className="fa-solid fa-plus"></i>
         </button>
       </div>
       <div>
-        <button onClick={onAdd}>Agregar al carrito</button>
+        <button className="conf" onClick={btnAgregar}>Confirmar cantidad</button>
       </div>
     </div>
   )

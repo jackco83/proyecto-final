@@ -5,24 +5,31 @@ import ItemDetailContainer from "./components/ItemDetailContainer"
 import { Container, Row, Col } from 'react-bootstrap'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { ToastContainer } from "react-toastify"
-import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css'
+import Cart from "./components/Cart"
+import MyProvider from "./context/CartContext"
+import Form from './components/Form';
 
 const App = () => {
 
   return (
     <BrowserRouter>
-      <NavBar/>
-      <Container as="main" className="my-4" fluid>
-        <Row>
-          <Col>
-            <Routes>
-              <Route path="/" element={<ItemListContainer/>} />
-              <Route path="/category/:categoryId" element={<ItemListContainer/>} />
-              <Route path="/item/:itemId" element={<ItemDetailContainer/>} />  
-            </Routes>
-          </Col>
-        </Row>
-      </Container>
+      <MyProvider>
+        <NavBar/>
+        <Container as="main" className="my-4" fluid>
+          <Row>
+            <Col>
+              <Routes>
+                <Route path="/" element={<ItemListContainer/>} />
+                <Route path="/category/:categoryId" element={<ItemListContainer/>} />
+                <Route path="/item/:itemId" element={<ItemDetailContainer/>} />
+                <Route path="/cart" element={<Cart/>}/>
+                <Route path="/form" element={<Form/>} />
+              </Routes>
+            </Col>
+          </Row>
+        </Container>
+      </MyProvider>
       <Footer/>
       <ToastContainer />
     </BrowserRouter>
