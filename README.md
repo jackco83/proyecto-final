@@ -38,12 +38,12 @@ Para instalar ReactJS, que es una de las librerías o frameworks para JavaScript
 
 * Clonar el repositorio de github:
   ```
-  git clone http://github.com/micuenta/mirepo.git
+  git clone https://github.com/jackco83/proyecto-final.git
   ```
 
 * Entrar a la carpeta del proyecto:
   ```
-  cd mirepo
+  cd my-project
   ```
 
 * Instalar los paquetes del package.json:
